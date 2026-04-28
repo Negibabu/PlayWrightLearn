@@ -8,14 +8,7 @@ A production-grade, TypeScript-first test automation framework for Salesforce Li
 
 1. [Prerequisites](#prerequisites)
 2. [Quick Start](#quick-start)
-3. [Project Structure](#project-structure)
-4. [Configuration](#configuration)
-5. [Running Tests](#running-tests)
-6. [Framework Design Decisions](#framework-design-decisions)
-7. [Salesforce Configuration Persistence](#salesforce-configuration-persistence)
-8. [Handling Salesforce Lightning Challenges](#handling-salesforce-lightning-challenges)
-9. [Known Limitations](#known-limitations)
-10. [What I Would Improve With More Time](#what-i-would-improve-with-more-time)
+3. [What I Would Improve With More Time](#what-i-would-improve-with-more-time)
 
 ---
 
