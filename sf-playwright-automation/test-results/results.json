@@ -1,0 +1,387 @@
+{
+  "config": {
+    "configFile": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\playwright.config.ts",
+    "rootDir": "D:/Clariti Projects/AssessmentProject/sf-playwright-automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\src\\config\\global-setup.ts",
+    "globalTeardown": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\src\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Clariti Projects/AssessmentProject/sf-playwright-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "salesforce-chrome",
+        "name": "salesforce-chrome",
+        "testDir": "D:/Clariti Projects/AssessmentProject/sf-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "D:/Clariti Projects/AssessmentProject/sf-playwright-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/Clariti Projects/AssessmentProject/sf-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12679,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "✅ Admin authentication state saved\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-28T20:01:08.114Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-1580989d32f149e984ed",
+          "file": "auth.setup.ts",
+          "line": 19,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "platform-user.spec.ts",
+      "file": "platform-user.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Scenario 2: Read-Only Platform User Access",
+          "file": "platform-user.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "2.1 - Create a Standard Platform User with read-only Opportunity access",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "salesforce-chrome",
+                  "projectName": "salesforce-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 65118,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "HEReeeee\n"
+                        },
+                        {
+                          "text": "HERe\n"
+                        },
+                        {
+                          "text": "0059I000009cnFRQAY\n"
+                        },
+                        {
+                          "text": "Found active Standard User: playwright.readonly.1777406188503@example.testorg.com (0059I000009cnFRQAY) — deactivating to free license\n"
+                        },
+                        {
+                          "text": "Deactivate output: \u001b[97m{\u001b[39m\n  \u001b[94m\"status\"\u001b[39m\u001b[93m:\u001b[39m \u001b[34m0\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"result\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m{\u001b[39m\n    \u001b[94m\"id\"\u001b[39m\u001b[93m:\u001b[39m \u001b[92m\"0059I000009cnFRQAY\"\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"success\"\u001b[39m\u001b[93m:\u001b[39m \u001b[91mtrue\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"errors\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\u001b[97m]\u001b[39m\n  \u001b[97m}\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"warnings\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\n    \u001b[92m\"org-api-version configuration overridden at 65.0\"\u001b[39m\n  \u001b[97m]\u001b[39m\n\u001b[97m}\u001b[39m\n"
+                        },
+                        {
+                          "text": "=== Raw profile output START ===\n"
+                        },
+                        {
+                          "text": "\u001b[97m{\u001b[39m\n  \u001b[94m\"status\"\u001b[39m\u001b[93m:\u001b[39m \u001b[34m0\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"result\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m{\u001b[39m\n    \u001b[94m\"records\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\n      \u001b[97m{\u001b[39m\n        \u001b[94m\"attributes\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m{\u001b[39m\n          \u001b[94m\"type\"\u001b[39m\u001b[93m:\u001b[39m \u001b[92m\"Profile\"\u001b[39m\u001b[32m,\u001b[39m\n          \u001b[94m\"url\"\u001b[39m\u001b[93m:\u001b[39m \u001b[92m\"/services/data/v65.0/sobjects/Profile/00e9I000004eYlcQAE\"\u001b[39m\n        \u001b[97m}\u001b[39m\u001b[32m,\u001b[39m\n        \u001b[94m\"Id\"\u001b[39m\u001b[93m:\u001b[39m \u001b[92m\"00e9I000004eYlcQAE\"\u001b[39m\n      \u001b[97m}\u001b[39m\n    \u001b[97m]\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"totalSize\"\u001b[39m\u001b[93m:\u001b[39m \u001b[34m1\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"done\"\u001b[39m\u001b[93m:\u001b[39m \u001b[91mtrue\u001b[39m\n  \u001b[97m}\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"warnings\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\n    \u001b[92m\"org-api-version configuration overridden at 65.0\"\u001b[39m\n  \u001b[97m]\u001b[39m\n\u001b[97m}\u001b[39m\n"
+                        },
+                        {
+                          "text": "=== Raw profile output END ===\n"
+                        },
+                        {
+                          "text": "Direct parse failed: Unexpected token '\u001b', \"\u001b[97m{\u001b[39\"... is not valid JSON\n"
+                        },
+                        {
+                          "text": "Error details: SyntaxError: Unexpected token '\u001b', \"\u001b[97m{\u001b[39\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at \u001b[90mD:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\\u001b[39mtests\\platform-user.spec.ts:118:32\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:326:9\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:320:11\n    at TimeoutManager.withRunnable (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:75:14)\n    at TestInfoImpl._runWithTimeout (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:318:7)\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:324:7\n    at WorkerMain._runTest (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:297:5)\n    at WorkerMain.runTestGroup (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:203:9)\n    at process.<anonymous> (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:73:22)\n"
+                        },
+                        {
+                          "text": "Trying parse of cleaned output...\n"
+                        },
+                        {
+                          "text": "Cleaned output parse succeeded\n"
+                        },
+                        {
+                          "text": "Found Standard User profile ID: 00e9I000004eYlcQAE\n"
+                        },
+                        {
+                          "text": "Creating user: playwright.readonly.1777406485486@example.testorg.com\n"
+                        },
+                        {
+                          "text": "Raw create output: \u001b[97m{\u001b[39m\n  \u001b[94m\"status\"\u001b[39m\u001b[93m:\u001b[39m \u001b[34m0\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"result\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m{\u001b[39m\n    \u001b[94m\"id\"\u001b[39m\u001b[93m:\u001b[39m \u001b[92m\"0059I000009cnIfQAI\"\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"success\"\u001b[39m\u001b[93m:\u001b[39m \u001b[91mtrue\u001b[39m\u001b[32m,\u001b[39m\n    \u001b[94m\"errors\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\u001b[97m]\u001b[39m\n  \u001b[97m}\u001b[39m\u001b[32m,\u001b[39m\n  \u001b[94m\"warnings\"\u001b[39m\u001b[93m:\u001b[39m \u001b[97m[\u001b[39m\n    \u001b[92m\"org-api-version configuration overridden at 65.0\"\u001b[39m\n  \u001b[97m]\u001b[39m\n\u001b[97m}\u001b[39m\n"
+                        },
+                        {
+                          "text": "Direct parse of create output failed: Unexpected token '\u001b', \"\u001b[97m{\u001b[39\"... is not valid JSON\n"
+                        },
+                        {
+                          "text": "Cleaned create output parse succeeded\n"
+                        },
+                        {
+                          "text": "Platform user created with ID: 0059I000009cnIfQAI\n"
+                        },
+                        {
+                          "text": "Admin navigation final URL: https://site-customization-5300.scratch.my.salesforce-setup.com/lightning/setup/ManageUsers/page?isUserEntityOverride=1&SetupDomainReload=1&address=%2F0059I000009cnIfQAI%3Fnoredirect%3D1&SetupDomainProbePassed=true\n"
+                        },
+                        {
+                          "text": "User detail header found but Login button not immediately visible; attempting to find Login button now...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "(node:8824) Warning: org-api-version configuration overridden at 65.0\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                        },
+                        {
+                          "text": "(node:13848) Warning: org-api-version configuration overridden at 65.0\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                        },
+                        {
+                          "text": "Could not query for existing Standard users: TypeError: Cannot read properties of null (reading 'query')\n    at \u001b[90mD:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\\u001b[39mtests\\platform-user.spec.ts:85:41\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:326:9\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:320:11\n    at TimeoutManager.withRunnable (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:75:14)\n    at TestInfoImpl._runWithTimeout (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:318:7)\n    at D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:324:7\n    at WorkerMain._runTest (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:297:5)\n    at WorkerMain.runTestGroup (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:203:9)\n    at process.<anonymous> (D:\\Clariti Projects\\AssessmentProject\\node_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:73:22)\n"
+                        },
+                        {
+                          "text": "(node:11292) Warning: org-api-version configuration overridden at 65.0\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                        },
+                        {
+                          "text": "(node:19648) Warning: org-api-version configuration overridden at 65.0\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                        },
+                        {
+                          "text": "Login button still not visible after header present; Login As may be disabled for this org/user.\n"
+                        },
+                        {
+                          "text": "Login As attempt failed or is not permitted for this admin user: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:text-is(\"Login\"), input[value=\"Login\"]').first()\u001b[22m\n\u001b[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI&SetupDomainReload=1\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\u001b[22m\n\u001b[2m    - waiting for\" https://site-customization-5300.scratch.my.salesforce-setup.com/visualforce/recsession?sid=00D9I000003APD7%21AQEAQGXD7exzSWJhx0Xf.9Frnof3ktfyM02CL48iGSp3aeZRFSCr6bggjydZLeUPyUrGdFwS4tkokUFTp8Me8OhKh_…\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\u001b[22m\n\u001b[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\"\u001b[22m\n\n    at LoginPage.loginAsUser \u001b[90m(D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\\u001b[39msrc\\pages\\LoginPage.ts:74:23\u001b[90m)\u001b[39m\n    at \u001b[90mD:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\\u001b[39mtests\\platform-user.spec.ts:348:17 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'D:\\\\Clariti Projects\\\\AssessmentProject\\\\sf-playwright-automation\\\\src\\\\pages\\\\LoginPage.ts'\u001b[39m,\n      line: \u001b[33m74\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'LoginPage.loginAsUser'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m`Click locator('a:text-is(\"Login\"), input[value=\"Login\"]').first()`\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'a:text-is(\"Login\"), input[value=\"Login\"] >> nth=0'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@65'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@65'\u001b[39m,\n      _title: \u001b[32m`Click locator('a:text-is(\"Login\"), input[value=\"Login\"]').first()`\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1777406544849\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:text-is(\"Login\"), input[value=\"Login\"]').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI&SetupDomainReload=1\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.my.salesforce-setup.com/visualforce/recsession?sid=00D9I000003APD7%21AQEAQGXD7exzSWJhx0Xf.9Frnof3ktfyM02CL48iGSp3aeZRFSCr6bggjydZLeUPyUrGdFwS4tkokUFTp8Me8OhKh_…\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\"\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:text-is(\"Login\"), input[value=\"Login\"]').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI&SetupDomainReload=1\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.my.salesforce-setup.com/visualforce/recsession?sid=00D9I000003APD7%21AQEAQGXD7exzSWJhx0Xf.9Frnof3ktfyM02CL48iGSp3aeZRFSCr6bggjydZLeUPyUrGdFwS4tkokUFTp8Me8OhKh_…\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/setup/ManageUsers/page?address=%2F0059I000009cnIfQAI\"\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting for\" https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\" navigation to finish...\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - navigated to \"https://site-customization-5300.scratch.lightning.force.com/lightning/r/User/0059I000009cnIfQAI/view\"\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at LoginPage.loginAsUser (D:\\\\Clariti Projects\\\\AssessmentProject\\\\sf-playwright-automation\\\\src\\\\pages\\\\LoginPage.ts:74:23)\\n'\u001b[39m +\n        \u001b[32m'    at D:\\\\Clariti Projects\\\\AssessmentProject\\\\sf-playwright-automation\\\\tests\\\\platform-user.spec.ts:348:17'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-28T20:01:22.209Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7e5c85280af091814f2a-8a570a734b7d8f6c7177",
+              "file": "platform-user.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "2.2 - Platform User can view the Opportunity (Scenario 1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "salesforce-chrome",
+                  "projectName": "salesforce-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2893,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n    at D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\tests\\platform-user.spec.ts:411:28",
+                        "location": {
+                          "file": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\tests\\platform-user.spec.ts",
+                          "column": 28,
+                          "line": 411
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 409 |\u001b[39m       \u001b[36mconst\u001b[39m userPassword \u001b[33m=\u001b[39m \u001b[33mSharedState\u001b[39m\u001b[33m.\u001b[39mplatformUserPassword\u001b[33m;\u001b[39m\n \u001b[90m 410 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 411 |\u001b[39m       expect(userUsername)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 412 |\u001b[39m       expect(userPassword)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 413 |\u001b[39m\n \u001b[90m 414 |\u001b[39m       \u001b[90m// Create a fresh browser context for the platform user\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\tests\\platform-user.spec.ts",
+                            "column": 28,
+                            "line": 411
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n\u001b[0m \u001b[90m 409 |\u001b[39m       \u001b[36mconst\u001b[39m userPassword \u001b[33m=\u001b[39m \u001b[33mSharedState\u001b[39m\u001b[33m.\u001b[39mplatformUserPassword\u001b[33m;\u001b[39m\n \u001b[90m 410 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 411 |\u001b[39m       expect(userUsername)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 412 |\u001b[39m       expect(userPassword)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 413 |\u001b[39m\n \u001b[90m 414 |\u001b[39m       \u001b[90m// Create a fresh browser context for the platform user\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\tests\\platform-user.spec.ts:411:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T20:02:27.624Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\test-results\\platform-user-Scenario-2-R-4022b-the-Opportunity-Scenario-1--salesforce-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\test-results\\platform-user-Scenario-2-R-4022b-the-Opportunity-Scenario-1--salesforce-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\test-results\\platform-user-Scenario-2-R-4022b-the-Opportunity-Scenario-1--salesforce-chrome\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\test-results\\platform-user-Scenario-2-R-4022b-the-Opportunity-Scenario-1--salesforce-chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Clariti Projects\\AssessmentProject\\sf-playwright-automation\\tests\\platform-user.spec.ts",
+                        "column": 28,
+                        "line": 411
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7e5c85280af091814f2a-c54924544c14f9fa4abf",
+              "file": "platform-user.spec.ts",
+              "line": 394,
+              "column": 7
+            },
+            {
+              "title": "2.3 - Platform User cannot edit the Opportunity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "salesforce-chrome",
+                  "projectName": "salesforce-chrome",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T20:02:30.883Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e5c85280af091814f2a-5898fd063215bc83c0c7",
+              "file": "platform-user.spec.ts",
+              "line": 462,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-28T20:01:07.036Z",
+    "duration": 83908.896,
+    "expected": 2,
+    "skipped": 1,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

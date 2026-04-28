@@ -1,0 +1,20 @@
+{
+  "orgName": "Playwright Automation Org",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "securitySettings": {
+      "passwordPolicies": {
+        "minimumPasswordLength": 8,
+        "complexity": "AlphaNumericSpecialCharacters",
+        "expiration": "Never"
+      }
+    }
+  }
+}

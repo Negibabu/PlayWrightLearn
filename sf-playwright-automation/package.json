@@ -1,0 +1,24 @@
+{
+  "name": "sf-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation framework for Salesforce Lightning Experience",
+  "scripts": {
+    "test": "playwright test",
+    "test:scenario1": "playwright test tests/scenario1/",
+    "test:scenario2": "playwright test tests/scenario2/",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "setup:org": "ts-node scripts/setup-scratch-org.ts",
+    "setup:all": "npm run setup:org && npm run test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
