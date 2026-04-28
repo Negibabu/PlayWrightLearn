@@ -53,7 +53,7 @@ npx playwright test
 ### 1. Test Data Factory
 Create a `TestDataFactory` class that uses the API to provision all test data before the UI tests run, and cleans it up after.
 
-### 2. Explore possibility of including Login As access in metadata deployemnt
+### 2. Explore possibility of including Login As access in metadata deployment
 Currently the new Quantity field, and FLS to Opportunity is enabled via metadata
 
 ### 3. Add Permission set for FLS
