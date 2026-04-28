@@ -51,3 +51,6 @@ Currently the new Quantity field, and FLS to Opportunity is enabled via metadata
 
 ### 3. Add Permission set for FLS
 Instead of using Profiles, grant FLS via permission sets that can be deployed using metadata
+
+### 4. Complete scenario 2
+I successfully automated the creation of a user assigned to the Standard User profile using Playwright. With additional time, I would extend the script to log in as the newly created user and validate their read and edit access to Opportunity records, ensuring that permissions are enforced as expected.
